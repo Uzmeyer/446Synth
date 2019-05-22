@@ -9,6 +9,7 @@
 #define SRC_RINGBUFFER_H_
 
 #include "stm32f4xx_hal.h"
+#define MIDIBUFFERSIZE 32
 
 template <typename T, int size>
 class RingBuffer {

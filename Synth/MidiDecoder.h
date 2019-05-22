@@ -8,12 +8,20 @@
 #ifndef SRC_MIDIDECODER_H_
 #define SRC_MIDIDECODER_H_
 
+#include "Synth.h"
+
 namespace std {
 
 class MidiDecoder {
 public:
-	MidiDecoder();
+	MidiDecoder(Synth* synth);
 	virtual ~MidiDecoder();
+	virtual void getNextByte() = 0;
+	void setSynth(Synth* synth);
+	void newByte(unsigned char byte);
+
+private:
+	Synth* synth;
 };
 
 } /* namespace std */

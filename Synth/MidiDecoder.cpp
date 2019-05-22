@@ -9,13 +9,23 @@
 
 namespace std {
 
-MidiDecoder::MidiDecoder() {
-	// TODO Auto-generated constructor stub
+MidiDecoder::MidiDecoder(Synth* synth) {
+	this->synth = synth;
 
 }
 
 MidiDecoder::~MidiDecoder() {
 	// TODO Auto-generated destructor stub
+}
+
+void MidiDecoder::setSynth(Synth* synth)
+{
+	this->synth = synth;
+}
+
+void MidiDecoder::newByte(unsigned char byte)
+{
+
 }
 
 } /* namespace std */

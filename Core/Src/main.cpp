@@ -83,8 +83,8 @@ static uint8_t phase = 0;
 static volatile uint8_t processflag = 0;
 static uint32_t prevtim = 0;
 static uint32_t idletime = 0;
-char usartrec;
-RingBuffer<char, 32> USARTBuffer;
+unsigned char usartrec;
+RingBuffer<unsigned char, MIDIBUFFERSIZE> USARTBuffer;
 
 /* USER CODE END PV */
 
