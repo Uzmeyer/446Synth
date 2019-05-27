@@ -14,6 +14,7 @@ class SynthComponent {
 public:
 	SynthComponent();
 	virtual ~SynthComponent();
+	virtual float out() = 0;
 };
 
 } /* namespace std */
