@@ -7,8 +7,9 @@
 
 #ifndef SRC_RINGBUFFER_H_
 #define SRC_RINGBUFFER_H_
-
+#ifdef STM32
 #include "stm32f4xx_hal.h"
+#ednif
 #define MIDIBUFFERSIZE 32
 
 template <typename T, int size>
