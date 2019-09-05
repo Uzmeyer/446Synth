@@ -8,14 +8,17 @@
 #ifndef SYNTH_H_
 #define SYNTH_H_
 
-namespace std {
+
 
 class Synth {
 public:
 	Synth();
 	virtual ~Synth();
+	void noteOn();
+	void noteOff();
+
 };
 
-} /* namespace std */
+
 
 #endif /* SYNTH_H_ */

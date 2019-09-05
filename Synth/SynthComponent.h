@@ -8,7 +8,7 @@
 #ifndef SYNTHCOMPONENT_H_
 #define SYNTHCOMPONENT_H_
 
-namespace std {
+
 
 class SynthComponent {
 public:
@@ -17,6 +17,6 @@ public:
 	virtual float out() = 0;
 };
 
-} /* namespace std */
+
 
 #endif /* SYNTHCOMPONENT_H_ */

@@ -24,20 +24,27 @@ enum MidiMessageType
 	MIDI_SYSTEM = 0xF0
 };
 
-namespace std {
+struct MidiMessage
+{
+	unsigned char messagetype;
+	unsigned char channel;
+	unsigned char data[2]
+};
+
+
 
 class MidiDecoder {
 public:
 	MidiDecoder(Synth* synth);
 	virtual ~MidiDecoder();
-	virtual void getNextByte() = 0;
 	void setSynth(Synth* synth);
 	void newByte(unsigned char byte);
+	void newMessage(MidiMessage message);
 
 private:
 	Synth* synth;
 };
 
-} /* namespace std */
+
 
 #endif /* SRC_MIDIDECODER_H_ */

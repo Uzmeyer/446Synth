@@ -7,7 +7,7 @@
 
 #include <SerialMidiDecoder.h>
 
-namespace std {
+
 
 SerialMidiDecoder::SerialMidiDecoder(Synth* synth, RingBuffer<unsigned char, 32>* buffer): MidiDecoder(synth)
 {
@@ -23,5 +23,5 @@ void SerialMidiDecoder::getNextByte()
 	this->newByte(this->buffer->pop());
 }
 
-} /* namespace std */
+
 

@@ -7,7 +7,7 @@
 
 #include "MidiDecoder.h"
 
-namespace std {
+
 
 MidiDecoder::MidiDecoder(Synth* synth) {
 	this->synth = synth;
@@ -28,4 +28,7 @@ void MidiDecoder::newByte(unsigned char byte)
 
 }
 
-} /* namespace std */
+void newMessage(MidiMessage message)
+{
+
+}

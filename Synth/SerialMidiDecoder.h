@@ -11,7 +11,6 @@
 #include <MidiDecoder.h>
 #include "RingBuffer.h"
 
-namespace std {
 
 class SerialMidiDecoder: public MidiDecoder {
 public:
@@ -23,6 +22,6 @@ private:
 	RingBuffer<unsigned char, MIDIBUFFERSIZE>* buffer;
 };
 
-} /* namespace std */
+
 
 #endif /* SERIALMIDIDECODER_H_ */

@@ -10,7 +10,7 @@
 
 #include <SynthComponent.h>
 
-class TimedSynthComponent: public std::SynthComponent {
+class TimedSynthComponent: public SynthComponent {
 public:
 	TimedSynthComponent();
 	virtual ~TimedSynthComponent();

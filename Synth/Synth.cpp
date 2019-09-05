@@ -7,7 +7,7 @@
 
 #include <Synth.h>
 
-namespace std {
+
 
 Synth::Synth() {
 	// TODO Auto-generated constructor stub
@@ -18,4 +18,4 @@ Synth::~Synth() {
 	// TODO Auto-generated destructor stub
 }
 
-} /* namespace std */
+
