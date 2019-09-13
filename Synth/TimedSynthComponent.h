@@ -14,7 +14,9 @@ class TimedSynthComponent: public SynthComponent {
 public:
 	TimedSynthComponent();
 	virtual ~TimedSynthComponent();
-	virtual float run() = 0;
+	float run();
+	
+
 };
 
 #endif /* TIMEDSYNTHCOMPONENT_H_ */

@@ -16,3 +16,8 @@ TimedSynthComponent::~TimedSynthComponent() {
 	// TODO Auto-generated destructor stub
 }
 
+float TimedSynthComponent::run()
+{
+	return 0.0f;
+}
+

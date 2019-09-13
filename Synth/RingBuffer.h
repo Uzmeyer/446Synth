@@ -7,8 +7,7 @@
 
 #ifndef SRC_RINGBUFFER_H_
 #define SRC_RINGBUFFER_H_
-//#define STM32
-#define WIN
+#include "SystemCommon.h"
 
 #ifdef STM32
 #include "stm32f4xx_hal.h"

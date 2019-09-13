@@ -9,8 +9,13 @@
 
 
 
-MidiDecoder::MidiDecoder(Synth* synth) {
-	this->synth = synth;
+MidiDecoder::MidiDecoder()
+{
+	this->synth = nullptr;
+}
+
+MidiDecoder::MidiDecoder(Synth* synthesizer) {
+	this->synth = synthesizer;
 
 }
 
@@ -18,9 +23,14 @@ MidiDecoder::~MidiDecoder() {
 	// TODO Auto-generated destructor stub
 }
 
-void MidiDecoder::setSynth(Synth* synth)
+void MidiDecoder::Init(Synth* synthesizer)
 {
-	this->synth = synth;
+	this->setSynth(synthesizer);
+}
+
+void MidiDecoder::setSynth(Synth* synthesizer)
+{
+	this->synth = synthesizer;
 }
 
 void MidiDecoder::newByte(unsigned char byte)
@@ -28,7 +38,46 @@ void MidiDecoder::newByte(unsigned char byte)
 
 }
 
-void newMessage(MidiMessage message)
+
+void MidiDecoder::newMessage(MidiEvent message)
 {
 
 }
+
+void MidiDecoder::noteOn()
+{
+
+}
+
+void MidiDecoder::noteOff()
+{
+}
+
+void MidiDecoder::allNotesOff()
+{
+}
+
+void MidiDecoder::polyAftertouch()
+{
+}
+
+void MidiDecoder::controlChange()
+{
+}
+
+void MidiDecoder::programChange()
+{
+}
+
+void MidiDecoder::channelAftertouch()
+{
+}
+
+void MidiDecoder::pitchBend()
+{
+}
+
+void MidiDecoder::sysEx()
+{
+}
+

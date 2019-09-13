@@ -18,4 +18,9 @@ SynthComponent::~SynthComponent() {
 	// TODO Auto-generated destructor stub
 }
 
+float SynthComponent::getCurrentValue()
+{
+	return currentValue;
+}
+
 

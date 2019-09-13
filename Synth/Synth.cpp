@@ -18,4 +18,23 @@ Synth::~Synth() {
 	// TODO Auto-generated destructor stub
 }
 
+void Synth::noteOn()
+{
+	
+}
+
+void Synth::noteOff()
+{
+}
+
+float Synth::run()
+{
+	return 0.0f;
+}
+
+float Synth::getCurrentSample()
+{
+	return 0.0f;
+}
+
 

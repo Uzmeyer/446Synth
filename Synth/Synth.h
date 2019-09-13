@@ -8,6 +8,12 @@
 #ifndef SYNTH_H_
 #define SYNTH_H_
 
+#include "Midi.h"
+#include "Oscillator.h"
+#include "Instrument.h"
+#include "Voice.h"
+#include "SystemCommon.h"
+
 
 
 class Synth {
@@ -16,6 +22,12 @@ public:
 	virtual ~Synth();
 	void noteOn();
 	void noteOff();
+	float run();
+	float getCurrentSample();
+
+private:
+	Voice voices[MAX_VOICES];
+	Instrument instruments[MAX_INSTRUMENTS];
 
 };
 
