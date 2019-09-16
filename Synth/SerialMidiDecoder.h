@@ -8,20 +8,21 @@
 #ifndef SERIALMIDIDECODER_H_
 #define SERIALMIDIDECODER_H_
 
-#include <MidiDecoder.h>
+#include "MidiDecoder.h"
 #include "RingBuffer.h"
 
+namespace glock
+{
+	class SerialMidiDecoder : public MidiDecoder {
+	public:
+		SerialMidiDecoder(Synth* synth, RingBuffer<unsigned char, MIDIBUFFERSIZE>* buffer);
+		virtual ~SerialMidiDecoder();
+		void getNextByte();
 
-class SerialMidiDecoder: public MidiDecoder {
-public:
-	SerialMidiDecoder(Synth* synth, RingBuffer<unsigned char, MIDIBUFFERSIZE>* buffer);
-	virtual ~SerialMidiDecoder();
-	void getNextByte();
+	private:
+		RingBuffer<unsigned char, MIDIBUFFERSIZE>* buffer;
+	};
 
-private:
-	RingBuffer<unsigned char, MIDIBUFFERSIZE>* buffer;
-};
-
-
+}
 
 #endif /* SERIALMIDIDECODER_H_ */

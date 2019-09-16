@@ -5,14 +5,17 @@
  *      Author: Jakob
  */
 
-#include <SynthState.h>
+#include "SynthState.h"
 
-SynthState::SynthState() {
-	// TODO Auto-generated constructor stub
+namespace glock
+{
+	SynthState::SynthState() {
+		// TODO Auto-generated constructor stub
+
+	}
+
+	SynthState::~SynthState() {
+		// TODO Auto-generated destructor stub
+	}
 
 }
-
-SynthState::~SynthState() {
-	// TODO Auto-generated destructor stub
-}
-

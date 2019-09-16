@@ -8,12 +8,13 @@
 #ifndef FILTER_H_
 #define FILTER_H_
 
-#include <SynthComponent.h>
-
-class Filter: public SynthComponent {
-public:
-	Filter();
-	virtual ~Filter();
-};
-
+#include "SynthComponent.h"
+namespace glock
+{
+	class Filter : public SynthComponent {
+	public:
+		Filter();
+		virtual ~Filter();
+	};
+}
 #endif /* FILTER_H_ */

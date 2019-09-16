@@ -5,23 +5,24 @@
  *      Author: Jakob
  */
 
-#include <SerialMidiDecoder.h>
+#include "SerialMidiDecoder.h"
 
-
-
-SerialMidiDecoder::SerialMidiDecoder(Synth* synth, RingBuffer<unsigned char, 32>* buffer): MidiDecoder(synth)
+namespace glock
 {
-	this->buffer = buffer;
+
+	SerialMidiDecoder::SerialMidiDecoder(Synth* synth, RingBuffer<unsigned char, 32> * buffer) : MidiDecoder(synth)
+	{
+		this->buffer = buffer;
+	}
+
+	SerialMidiDecoder::~SerialMidiDecoder() {
+		// TODO Auto-generated destructor stub
+	}
+
+	void SerialMidiDecoder::getNextByte()
+	{
+		this->newByte(this->buffer->pop());
+	}
+
 }
-
-SerialMidiDecoder::~SerialMidiDecoder() {
-	// TODO Auto-generated destructor stub
-}
-
-void SerialMidiDecoder::getNextByte()
-{
-	this->newByte(this->buffer->pop());
-}
-
-
 

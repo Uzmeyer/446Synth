@@ -5,14 +5,16 @@
  *      Author: Jakob
  */
 
-#include <LFO.h>
+#include "LFO.h"
+namespace glock
+{
+	LFO::LFO() {
+		// TODO Auto-generated constructor stub
 
-LFO::LFO() {
-	// TODO Auto-generated constructor stub
+	}
+
+	LFO::~LFO() {
+		// TODO Auto-generated destructor stub
+	}
 
 }
-
-LFO::~LFO() {
-	// TODO Auto-generated destructor stub
-}
-

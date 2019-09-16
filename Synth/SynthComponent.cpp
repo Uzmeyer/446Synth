@@ -5,22 +5,23 @@
  *      Author: Jakob
  */
 
-#include <SynthComponent.h>
+#include "SynthComponent.h"
 
-
-
-SynthComponent::SynthComponent() {
-	// TODO Auto-generated constructor stub
-
-}
-
-SynthComponent::~SynthComponent() {
-	// TODO Auto-generated destructor stub
-}
-
-float SynthComponent::getCurrentValue()
+namespace glock
 {
-	return currentValue;
+
+	SynthComponent::SynthComponent() {
+		// TODO Auto-generated constructor stub
+
+	}
+
+	SynthComponent::~SynthComponent() {
+		// TODO Auto-generated destructor stub
+	}
+
+	float SynthComponent::getCurrentValue()
+	{
+		return currentValue;
+	}
+
 }
-
-

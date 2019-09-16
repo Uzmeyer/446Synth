@@ -7,11 +7,12 @@
 
 #ifndef HARDWAREHANDLER_H_
 #define HARDWAREHANDLER_H_
-
-class HardwareHandler {
-public:
-	HardwareHandler();
-	virtual ~HardwareHandler();
-};
-
+namespace glock
+{
+	class HardwareHandler {
+	public:
+		HardwareHandler();
+		virtual ~HardwareHandler();
+	};
+}
 #endif /* HARDWAREHANDLER_H_ */

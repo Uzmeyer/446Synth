@@ -8,15 +8,16 @@
 #ifndef TIMEDSYNTHCOMPONENT_H_
 #define TIMEDSYNTHCOMPONENT_H_
 
-#include <SynthComponent.h>
+#include "SynthComponent.h"
+namespace glock
+{
+	class TimedSynthComponent : public SynthComponent {
+	public:
+		TimedSynthComponent();
+		virtual ~TimedSynthComponent();
+		float run();
 
-class TimedSynthComponent: public SynthComponent {
-public:
-	TimedSynthComponent();
-	virtual ~TimedSynthComponent();
-	float run();
-	
 
-};
-
+	};
+}
 #endif /* TIMEDSYNTHCOMPONENT_H_ */

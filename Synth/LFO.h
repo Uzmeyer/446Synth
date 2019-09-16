@@ -8,12 +8,13 @@
 #ifndef LFO_H_
 #define LFO_H_
 
-#include <TimedSynthComponent.h>
-
-class LFO: public TimedSynthComponent {
-public:
-	LFO();
-	virtual ~LFO();
-};
-
+#include "TimedSynthComponent.h"
+namespace glock
+{
+	class LFO : public TimedSynthComponent {
+	public:
+		LFO();
+		virtual ~LFO();
+	};
+}
 #endif /* LFO_H_ */

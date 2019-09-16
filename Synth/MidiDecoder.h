@@ -14,32 +14,36 @@
 
 
 
+namespace glock
+{
+	
 
 
+	class MidiDecoder {
+	public:
+		MidiDecoder();
+		MidiDecoder(Synth* synth);
+		virtual ~MidiDecoder();
+		void Init(Synth* synth);
+		void setSynth(Synth* synth);
+		void newByte(unsigned char byte);
+		void newMessage(MidiMessage message);
+		void noteOn();
+		void noteOff();
+		void allNotesOff();
+		void polyAftertouch();
+		void controlChange();
+		void programChange();
+		void channelAftertouch();
+		void pitchBend();
+		void sysEx();
 
-class MidiDecoder {
-public:
-	MidiDecoder();
-	MidiDecoder(Synth* synth);
-	virtual ~MidiDecoder();
-	void Init(Synth* synth);
-	void setSynth(Synth* synthesizer);
-	void newByte(unsigned char byte);
-	void newMessage(MidiEvent message);
-	void noteOn();
-	void noteOff();
-	void allNotesOff();
-	void polyAftertouch();
-	void controlChange();
-	void programChange();
-	void channelAftertouch();
-	void pitchBend();
-	void sysEx();
+	private:
+		Synth* m_synth;
+		char m_basicChannel = MIDI_CHANNEL_1;
+		char m_instrumentChannel[MAX_INSTRUMENTS];
+	};
 
-private:
-	Synth* synth;
-};
-
-
+}
 
 #endif /* SRC_MIDIDECODER_H_ */

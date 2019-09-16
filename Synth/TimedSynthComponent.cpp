@@ -5,19 +5,21 @@
  *      Author: Jakob
  */
 
-#include <TimedSynthComponent.h>
-
-TimedSynthComponent::TimedSynthComponent() {
-	// TODO Auto-generated constructor stub
-
-}
-
-TimedSynthComponent::~TimedSynthComponent() {
-	// TODO Auto-generated destructor stub
-}
-
-float TimedSynthComponent::run()
+#include "TimedSynthComponent.h"
+namespace glock
 {
-	return 0.0f;
-}
+	TimedSynthComponent::TimedSynthComponent() {
+		// TODO Auto-generated constructor stub
 
+	}
+
+	TimedSynthComponent::~TimedSynthComponent() {
+		// TODO Auto-generated destructor stub
+	}
+
+	float TimedSynthComponent::run()
+	{
+		return 0.0f;
+	}
+
+}

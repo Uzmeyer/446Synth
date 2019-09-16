@@ -5,14 +5,15 @@
  *      Author: Jakob
  */
 
-#include <HardwareHandler.h>
+#include "HardwareHandler.h"
+namespace glock
+{
+	HardwareHandler::HardwareHandler() {
+		// TODO Auto-generated constructor stub
 
-HardwareHandler::HardwareHandler() {
-	// TODO Auto-generated constructor stub
+	}
 
+	HardwareHandler::~HardwareHandler() {
+		// TODO Auto-generated destructor stub
+	}
 }
-
-HardwareHandler::~HardwareHandler() {
-	// TODO Auto-generated destructor stub
-}
-

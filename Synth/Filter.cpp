@@ -5,14 +5,17 @@
  *      Author: Jakob
  */
 
-#include <Filter.h>
+#include "Filter.h"
+namespace glock
+{
+	Filter::Filter() {
+		// TODO Auto-generated constructor stub
 
-Filter::Filter() {
-	// TODO Auto-generated constructor stub
+	}
 
-}
+	Filter::~Filter() {
+		// TODO Auto-generated destructor stub
+	}
 
-Filter::~Filter() {
-	// TODO Auto-generated destructor stub
 }
 

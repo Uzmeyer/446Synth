@@ -5,42 +5,9 @@
  *      Author: Jakob
  */
 #include "Wavetable.h"
-
-Wavetable wavetables[] =
+namespace glock
 {
-	{
-		2048,
-		sinTable,
-	},
-	{
-		2048,
-		harmonicSqrTable,
-	},
-	{
-		2048,
-		harmonicSawTable,
-	},
-	{
-		2048,
-		harmonicTriTable,
-	},
-	{
-		2048,
-		harmonicTrapTable,
-	},
-	{
-		2048,
-		sqrTable,
-	},
-	{
-		2048,
-		sawTable,
-	},
-	{
-		2048,
-		triTable,
-	},
-};
+
 
 float sinTable[] = {
 	0.0f, 0.0030679567717015743255615234375f, 0.0061358846724033355712890625f, 0.009203754365444183349609375f, 0.01227153837680816650390625f,
@@ -3346,5 +3313,41 @@ float sawTable[] = {
 	-0.00390625f, -0.0029296875f, -0.001953125f, 0.0f
 };
 
+struct Wavetable wavetables[] =
+{
+	{
+		2048,
+		sinTable,
+	},
+	{
+		2048,
+		harmonicSqrTable,
+	},
+	{
+		2048,
+		harmonicSawTable,
+	},
+	{
+		2048,
+		harmonicTriTable,
+	},
+	{
+		2048,
+		harmonicTrapTable,
+	},
+	{
+		2048,
+		sqrTable,
+	},
+	{
+		2048,
+		sawTable,
+	},
+	{
+		2048,
+		triTable,
+	},
+};
 
+}
 

@@ -6,12 +6,13 @@
  */
 
 #include "VirtualPatch.h"
-
-/*
-VirtualPatch defaultPatch =
+namespace glock
 {
+	/*
+	VirtualPatch defaultPatch =
+	{
 
-};
-*/
-
+	};
+	*/
+}
 

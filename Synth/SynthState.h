@@ -7,11 +7,12 @@
 
 #ifndef SYNTHSTATE_H_
 #define SYNTHSTATE_H_
-
-class SynthState {
-public:
-	SynthState();
-	virtual ~SynthState();
-};
-
+namespace glock
+{
+	class SynthState {
+	public:
+		SynthState();
+		virtual ~SynthState();
+	};
+}
 #endif /* SYNTHSTATE_H_ */

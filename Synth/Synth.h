@@ -14,23 +14,26 @@
 #include "Voice.h"
 #include "SystemCommon.h"
 
+namespace glock
+{
 
+	class Synth {
+	public:
+		Synth();
+		virtual ~Synth();
+		void Init(int t_samplerate);
+		void noteOn(char instrument, char note, char velocity);
+		void noteOff(char instrument, char note);
+		float run();
+		float getCurrentSample();
 
-class Synth {
-public:
-	Synth();
-	virtual ~Synth();
-	void noteOn();
-	void noteOff();
-	float run();
-	float getCurrentSample();
+	private:
+		Voice m_voices[MAX_VOICES];
+		Instrument m_instruments[MAX_INSTRUMENTS];
+		float m_currentSample;
 
-private:
-	Voice voices[MAX_VOICES];
-	Instrument instruments[MAX_INSTRUMENTS];
+	};
 
-};
-
-
+}
 
 #endif /* SYNTH_H_ */
