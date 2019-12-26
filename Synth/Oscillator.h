@@ -30,6 +30,8 @@ namespace glock
 	{
 		OSCILLATOR_WAVETABLE, //band limited wavetable
 		OSCILLATOR_NAIVE,
+		OSCILLATOR_POLYBLEP,
+
 	};
 
 	class Oscillator : public TimedSynthComponent {

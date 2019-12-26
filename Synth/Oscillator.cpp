@@ -15,7 +15,7 @@ namespace glock
 	Oscillator::Oscillator() {
 		// TODO Auto-generated constructor stub
 		m_oscOn = false;
-		m_wavetable = &wavetables[WAVETABLE_TRI];
+		m_wavetable = &wavetables[WAVETABLE_SAW];
 	}
 
 	Oscillator::~Oscillator() {
